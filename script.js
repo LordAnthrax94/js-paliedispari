@@ -1,18 +1,22 @@
-let inserimento = prompt('Inserire una parola')
+const inserimento = prompt('Inserire una parola')
 
-let parolapalindroma = inserimento.toLowerCase
+const parolapalindroma = inserimento.toLowerCase();
 
 let parola = checkpalindromo()
 
 function checkpalindromo(paroladata){
- if(parolapalindroma === inserimento.slice().reverse().join()){
-   
+ if(parolapalindroma === parolapalindroma.split('').reverse().join('')){
+   messaggio = 'La parola è palindroma'
+ } else{
+   messaggio ='La parola non è palindroma'
  }
-   return true
+   return messaggio
  
  }
 
  console.log(parola);
+
+
  
 
 
