@@ -1,9 +1,6 @@
 let sceltanum = parseInt(prompt('Inserire un numero da 1 a 5'))
 let pariodispari = prompt('Inserire Pari o Dispari')
 
-const sceltapari = 'pari';
-const sceltadispari = 'dispari';
-
  
 let sceltapc = randomcomputer()
 
@@ -17,7 +14,7 @@ console.log(somma);
 const message = 'Hai perso';
 
 
-if (somma === ispari && pariodispari === sceltapari.toLowerCase){
+if (somma === ispari){
   message = 'Hai vinto';  
 }
 
